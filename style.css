@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --color-yellow-green: #aad424;
+  --color-grey: #d8dbdd;
+  --color-grey-dark: #797877;
+  --color-matisee: #f0be41;
+  --color-black-main: #000000;
+}
