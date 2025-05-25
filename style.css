@@ -80,6 +80,7 @@ body {
   background: var(--color-matisee);
   padding-block: 1rem;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 .game-container-player-hands {
   padding-top: 1rem;
