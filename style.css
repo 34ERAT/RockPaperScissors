@@ -7,9 +7,101 @@ html {
   font-size: 62.5%;
 }
 :root {
+  --primary-font: "Press Start 2P", system-ui;
   --color-yellow-green: #aad424;
   --color-grey: #d8dbdd;
   --color-grey-dark: #797877;
   --color-matisee: #f0be41;
   --color-black-main: #000000;
+}
+body {
+  background: var(--color-grey);
+  font-family: var(--primary-font);
+  display: flex;
+  justify-content: center;
+  /* font-size: 1rem; */
+  text-transform: capitalize;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*game container*/
+
+.game-container {
+  background: var(--color-yellow-green);
+  padding: 1rem 0.5rem;
+  width: 50%;
+}
+.game-container-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.game-container-show-board {
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-container-show-board-players {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  gap: 1rem;
+}
+.game-containter-players-hand {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-containter-players-hand p {
+  font-size: 2rem;
+  font-weight: 200;
+}
+.game-container-playerAcitve-hand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 30%;
+  font-size: 12rem;
+  padding: 1rem;
+}
+.game-container-playerAcitve-hand span {
+  width: 100%;
+  border: solid 0.27rem var(--color-black-main);
+  border-style: dashed;
+}
+.game-container-winner-message {
+  background: var(--color-matisee);
+  padding-block: 1rem;
+  font-size: 2rem;
+}
+.game-container-player-hands {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.player-hand {
+  font: inherit;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+  border: none;
+  border-radius: 1rem;
+}
+.player-hand span {
+  font-size: 6rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .game-container {
+    width: 100%;
+  }
 }

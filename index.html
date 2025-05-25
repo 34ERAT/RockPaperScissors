@@ -1,12 +1,65 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <title>Rock Paper Scissors</title>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="game-container">
+      <div class="game-container-header">
+        <div class="game-container-header-copy-write">
+          <p>&copy; 2025 <a href="#">Philip Kanuti</a></p>
+        </div>
+        <div class="game-container-header-players-scores">
+          <p>
+            computer <span class="computer-score">5</span>
+            <span class="player-score">5</span>
+            player
+          </p>
+        </div>
+      </div>
+
+      <div class="game-container-show-board">
+        <div class="game-container-show-board-players">
+          <div class="game-containter-players-hand">
+            <p>computer</p>
+            <div class="game-container-playerAcitve-hand"><span>✌️</span></div>
+          </div>
+
+          <p class="game-container-winner-message">currently draw</p>
+
+          <div class="game-containter-players-hand">
+            <p>player</p>
+            <div class="game-container-playerAcitve-hand"><span>✌️</span></div>
+          </div>
+        </div>
+
+        <div class="game-container-player-hands">
+          <button class="player-hand">
+            <span>✊</span>
+            <p>Rock</p>
+          </button>
+
+          <button class="player-hand">
+            <span>✋</span>
+            <p>paper</p>
+          </button>
+
+          <button class="player-hand">
+            <span>✌️</span>
+            <p>scissors</p>
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
