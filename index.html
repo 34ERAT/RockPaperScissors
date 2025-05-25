@@ -20,8 +20,8 @@
         </div>
         <div class="game-container-header-players-scores">
           <p>
-            computer <span class="computer-score">5</span>
-            <span class="player-score">5</span>
+            computer <span id="computerScore">5</span>
+            <span id="playerScore">5</span>
             player
           </p>
         </div>
@@ -31,29 +31,35 @@
         <div class="game-container-show-board-players">
           <div class="game-containter-players-hand">
             <p>computer</p>
-            <div class="game-container-playerAcitve-hand"><span>✌️</span></div>
+            <div class="game-container-playerAcitve-hand">
+              <span id="computerHand">✌️</span>
+            </div>
           </div>
 
-          <p class="game-container-winner-message">currently draw</p>
+          <p id="winnerMessageView" class="game-container-winner-message">
+            currently draw
+          </p>
 
           <div class="game-containter-players-hand">
             <p>player</p>
-            <div class="game-container-playerAcitve-hand"><span>✌️</span></div>
+            <div class="game-container-playerAcitve-hand">
+              <span id="playerHand">✌️</span>
+            </div>
           </div>
         </div>
 
         <div class="game-container-player-hands">
-          <button class="player-hand">
+          <button id="btnRock" class="player-hand">
             <span>✊</span>
             <p>Rock</p>
           </button>
 
-          <button class="player-hand">
+          <button id="btnPaper" class="player-hand">
             <span>✋</span>
             <p>paper</p>
           </button>
 
-          <button class="player-hand">
+          <button id="btnScissors" class="player-hand">
             <span>✌️</span>
             <p>scissors</p>
           </button>
